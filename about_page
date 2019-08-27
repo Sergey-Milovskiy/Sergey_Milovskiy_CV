@@ -4,7 +4,15 @@
  <title>Webpage</title>
  </head>
  <body>
- <h1>Heading</h1>
+<header><nav><ul>
+<li><a href = "home_page.html#employment">Employment History</a></li>
+<li><a href = "home_page.html#education">Education</a></li>
+<li><a href = "home_page.html#software">Software Knowledge</a></li>
+<li><a href = "home_page.html#hardware">Hardware Knowledge</a></li>
+<li><a href = "home_page.html#key_attributes">Key Personal Attributes</a></li>
+<li><a href = "about_page.html#about">About me</a></li>
+</ul></nav></header>
+<h1 id = "about">About me</h1>
  <p>A paragraph.</p>
  </body>
 </html>

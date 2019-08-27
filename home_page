@@ -4,7 +4,20 @@
  <title>Webpage</title>
  </head>
  <body>
- <h1>Heading</h1>
+ <header><nav><ul>
+<li><a href = "home_page.html#employment">Employment History</a></li>
+<li><a href = "home_page.html#education">Education</a></li>
+<li><a href = "home_page.html#software">Software Knowledge</a></li>
+<li><a href = "home_page.html#hardware">Hardware Knowledge</a></li>
+<li><a href = "home_page.html#key_attributes">Key Personal Attributes</a></li>
+<li><a href = "about_page.html#about">About me</a></li>
+</ul></nav></header>
+ <h1>Sergey Milovskiy</h1>
+ <h2 id = "employment">Employment History</h2>
+ <h2 id = "education">Formal Education and Training</h2>
+ <h2 id = "software">Software Knowledge</h2>
+ <h2 id = "hardware">Hardware Knowledge</h2>
+ <h2 id = "key_attributes">Key Personal Attributes</h2>
  <p>A paragraph.</p>
  </body>
 </html>
