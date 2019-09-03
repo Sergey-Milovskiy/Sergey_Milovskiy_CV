@@ -2,7 +2,9 @@
 <html lang=”en”>
  <head>
         <link rel="shortcut icon" href="pic/Sergey_Milovskiy_LOGO.png" type="image/x-icon">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
  <title>Actor</title>
  <style>
  .header {
@@ -12,8 +14,50 @@
     text-align: center;
   }
  
+.icon-bar {
+    position: absolute;
+    top: 25px;
+     right: 25px;
+  width: 90px;
+  background-color: rgb(191, 192, 255);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(89, 92, 255);
+}
+.header {
+  background-color: #6670ff;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.image
+{
+    width: 20%;
+    display: block;
+  margin-left: 0%;
+  margin-right: auto;
+  border-radius: 99%;
+
+}
  </style> </head>
  <body>
+        <div class="header">
+                <div class="icon-bar">
+                        <a href="home_page.html"><i class="fa fa-home"></i></a> 
+                        <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
+                    </div>
+                    <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image">
+            </div>
  <h1>Heading</h1>
  <p>A paragraph.</p>
  </body>
