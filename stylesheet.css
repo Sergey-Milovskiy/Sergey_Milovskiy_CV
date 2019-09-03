@@ -1,0 +1,18 @@
+.mylist {list-style-type: circle}
+.mylist1{list-style-type: decimal}
+.mylist2{list-style-type: decimal-leading-zero}
+.mylist3{list-style-type: disc}
+.mylist4{list-style-type: georgian}
+.mylist5{list-style-type: inherit}
+.mylist6{list-style-type: initial}
+.mylist7{list-style-type: lower-alpha}
+.mylist8{list-style-type: lower-greek}
+.mylist9{list-style-type: lower-latin}
+.mylist10{list-style-type: lower-roman}
+.mylist11{list-style-type: none}
+.mylist12{list-style-type: square}
+.mylist13{list-style-type: symbols(-)}
+.mylist14{list-style-type: unset}
+.mylist15{list-style-type: upper-alpha}
+.mylist16{list-style-type: upper-latin}
+.mylist17{list-style-type: upper-roman}
