@@ -13,47 +13,46 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
 body {margin:0;
     font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;}
+  <!--
+.content {
+  padding: 16px;
+  background-color: #6670ff;
 
-.navbar {
-  overflow: hidden;
-  background-color: rgb(52, 86, 136);
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: rgb(67, 227, 255);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.navbar a:hover {
-  background: rgb(33, 225, 231);
-  color: rgb(61, 14, 105);
-}
-#navbar a.active {
-  background-color: rgb(76, 119, 175);
-  color: rgb(52, 86, 136);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 .header {
   background-color: #6670ff;
   padding: 30px;
   text-align: center;
 }
-.content {
-  padding: 16px;
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.66666666666666666666666%;
 }
-.sticky + .content {
-  padding-top: 60px;
+.tablink:hover {
+  background-color: #777;
 }
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(255, 255, 255);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#employment {background-color: rgb(214, 50, 50);}
+#education {background-color: rgb(25, 185, 97);}
+#software {background-color: rgb(52, 52, 218);}
+#hardware {background-color: rgb(253, 182, 49);}
+#key_attributes {background-color: rgb(223, 50, 214);}
+#about {background-color: rgb(42, 138, 216);}
+
 </style>
  </head>
  <body>
@@ -72,18 +71,15 @@ body {margin:0;
                 <h1>Sergey Milovskiy</h1>
                 <h2>This is my CV</h2>
     </div>
-    <div class="navbar">
-    <a href="home_page.html#employment">Employment History</a>
-    <a href="home_page.html#education">Education</a>
-    <a href="home_page.html#software">Software Knowledge</a>
-    <a href="home_page.html#hardware">Hardware Knowledge</a>
-    <a href="home_page.html#key_attributes">Key Personal Attributes</a>
-    <a class="active" href="about_page.html#about">About me</a>
     
-    </div>
-<main class="content"> <!-- style="margin-top:200px;" -->
+<button class="tablink" onclick="openPage('employment', this, 'red')">Employment History</button>
+<button class="tablink" onclick="openPage('education', this, 'green')">Education</button>
+<button class="tablink" onclick="openPage('software', this, 'blue')">Software Knowledge</button>
+<button class="tablink" onclick="openPage('hardware', this, 'orange')">Hardware Knowledge</button>
+<button class="tablink" onclick="openPage('key_attributes', this, 'blue')">Key Personal Attributes</button>
+<button class="tablink" onclick="openPage('about_page#about', this, 'orange')">About me</button>
 
-    <h2 id = "employment">Employment History</h2>
+    <div id="employment" class="tabcontent">
  <h3>August 2019 &#8212; now	</h3>
  <p>Actor at MCTV Model And Talent Management</p>
  <p>Joiner at Install Nation Group</p>
@@ -109,7 +105,8 @@ Having the confidence, energy and dedication to perform. </p>
 <h4>Job Description</h4>
 <p>Client support. Communicating with clients and taking their brief.</p>
 <p>Marketing. Admin money management with full access to cash registers performing tasks such as counting money, separating charge slips, coupons, and vouchers, balancing cash drawers, and making deposits.</p>
-<h2 id = "education">Formal Education and Training</h2>
+</div>
+<div id="education" class="tabcontent">
 <h3>Education</h3>
 <p>September 2005 &#8212; June 2016</p>
 <p>School &#8470; 1498 (HSC) (Completed)</p>
@@ -128,7 +125,8 @@ Having the confidence, energy and dedication to perform. </p>
 <h3>Formal Training</h3>
 <p>White Card (Date of Issue: 09/12/2017)</p>
 <p>Card &#8470;: CGI1504447SEQ01</p>
- <h2 id = "software">Software Knowledge</h2>
+</div>
+ <div id="software" class="tabcontent">
  <h3>Presentation for web and print</h3>
  <dl>
 <dd>Adobe Photoshop</dd>
@@ -170,13 +168,15 @@ Having the confidence, energy and dedication to perform. </p>
      <dd>Microsoft Access </dd>
      <dd>Microsoft Visio</dd>
  </dl>
- <h2 id = "hardware">Hardware Knowledge</h2>
+</div>
+ <div id="hardware" class="tabcontent">
 <dl>
 <dd>Digital and Film Camera.</dd>
 <dd>Experience using PC platform and device setting (Scanner/Printer, multimedia projectors, sound, and video).</dd>
 <dd>Various woodwork and metalwork equipment.</dd>
 </dl>
- <h2 id = "key_attributes">Key Personal Attributes</h2>
+</div>
+ <div id="key_attributes" class="tabcontent">
 <p>Active person with ability and willingness to learn and build a career within an organisation.</p>
 <p>Ability to work with clients following company rules and conditions.</p>
 <p>Always complete a job with the utmost quality.</p> 
@@ -187,23 +187,30 @@ Having the confidence, energy and dedication to perform. </p>
 <p>A team player. I can lead and follow.</p>
 <p>Have a valid Card ID of NSW.</p>
 <p>Physically fit and motivated.</p>
+</div>
+<div id="about_page#about" class="tabcontent">About me</div>
+</div>
+<main class="content">
+        <img src="/pic/Sergey_Milovskiy_LOGO.png" alt="Logo">
+
 </main>
-
-
-
 <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
+      function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
         </script>
 </body>
 </html>
