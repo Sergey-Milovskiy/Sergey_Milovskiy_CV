@@ -15,7 +15,7 @@ body {margin:0;
   font-family: Arial, Helvetica, sans-serif;}
 .image
 {
-    width: 50%
+    width: 25%
     
 }
 .content {
@@ -25,6 +25,7 @@ body {margin:0;
 }
 .header {
   background-color: #6670ff;
+  color: white;
   padding: 30px;
   text-align: center;
 }
@@ -55,7 +56,7 @@ body {margin:0;
 #software {background-color: rgb(52, 52, 218);}
 #hardware {background-color: rgb(201, 139, 25);}
 #key_attributes {background-color: rgb(214, 36, 205);}
-#about {background-color: rgb(42, 138, 216);}
+#about {background-color: #6670ff;}
 
 </style>
  </head>
@@ -72,6 +73,7 @@ body {margin:0;
 </div></header>-->
 
     <div class="header">
+                <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image">
                 <h1>Sergey Milovskiy</h1>
                 <h2>This is my CV</h2>
     </div>
@@ -81,7 +83,7 @@ body {margin:0;
 <button class="tablink" onclick="openPage('software', this, 'blue')">Software Knowledge</button>
 <button class="tablink" onclick="openPage('hardware', this, 'orange')">Hardware Knowledge</button>
 <button class="tablink" onclick="openPage('key_attributes', this, 'blue')">Key Personal Attributes</button>
-<button class="tablink" onclick="openPage('about', this, 'orange')">About me</button>
+<button class="tablink" onclick="openPage('about', this, 'orange')" id="defaultOpen">About me</button>
 
     <div id="employment" class="tabcontent">
         <h2>Employment History</h2>
@@ -212,7 +214,6 @@ Having the confidence, energy and dedication to perform. </p>
        <p>On my site you will find out more about my life experience, education and the most important skills in your areas.</p>
        </div>
 <main class="content">
-        <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image">
 
 </main>
 <script>
