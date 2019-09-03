@@ -13,7 +13,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
 body {margin:0;
     font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;}
-  <!--
+.image
+{
+    width: 50%
+    
+}
 .content {
   padding: 16px;
   background-color: #6670ff;
@@ -25,7 +29,7 @@ body {margin:0;
   text-align: center;
 }
 .tablink {
-  background-color: #555;
+  background-color: rgb(85, 85, 85);
   color: white;
   float: left;
   border: none;
@@ -36,7 +40,7 @@ body {margin:0;
   width: 16.66666666666666666666666%;
 }
 .tablink:hover {
-  background-color: #777;
+  background-color: rgb(95, 156, 113);
 }
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -49,8 +53,8 @@ body {margin:0;
 #employment {background-color: rgb(214, 50, 50);}
 #education {background-color: rgb(25, 185, 97);}
 #software {background-color: rgb(52, 52, 218);}
-#hardware {background-color: rgb(253, 182, 49);}
-#key_attributes {background-color: rgb(223, 50, 214);}
+#hardware {background-color: rgb(201, 139, 25);}
+#key_attributes {background-color: rgb(214, 36, 205);}
 #about {background-color: rgb(42, 138, 216);}
 
 </style>
@@ -77,9 +81,10 @@ body {margin:0;
 <button class="tablink" onclick="openPage('software', this, 'blue')">Software Knowledge</button>
 <button class="tablink" onclick="openPage('hardware', this, 'orange')">Hardware Knowledge</button>
 <button class="tablink" onclick="openPage('key_attributes', this, 'blue')">Key Personal Attributes</button>
-<button class="tablink" onclick="openPage('about_page#about', this, 'orange')">About me</button>
+<button class="tablink" onclick="openPage('about', this, 'orange')">About me</button>
 
     <div id="employment" class="tabcontent">
+        <h2>Employment History</h2>
  <h3>August 2019 &#8212; now	</h3>
  <p>Actor at MCTV Model And Talent Management</p>
  <p>Joiner at Install Nation Group</p>
@@ -107,6 +112,7 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Marketing. Admin money management with full access to cash registers performing tasks such as counting money, separating charge slips, coupons, and vouchers, balancing cash drawers, and making deposits.</p>
 </div>
 <div id="education" class="tabcontent">
+    <h2>Formal Education and Training</h2>
 <h3>Education</h3>
 <p>September 2005 &#8212; June 2016</p>
 <p>School &#8470; 1498 (HSC) (Completed)</p>
@@ -127,6 +133,7 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Card &#8470;: CGI1504447SEQ01</p>
 </div>
  <div id="software" class="tabcontent">
+     <h2>Software Knowledge</h2>
  <h3>Presentation for web and print</h3>
  <dl>
 <dd>Adobe Photoshop</dd>
@@ -170,6 +177,7 @@ Having the confidence, energy and dedication to perform. </p>
  </dl>
 </div>
  <div id="hardware" class="tabcontent">
+     <h2>Hardware Knowledge</h2>
 <dl>
 <dd>Digital and Film Camera.</dd>
 <dd>Experience using PC platform and device setting (Scanner/Printer, multimedia projectors, sound, and video).</dd>
@@ -177,6 +185,7 @@ Having the confidence, energy and dedication to perform. </p>
 </dl>
 </div>
  <div id="key_attributes" class="tabcontent">
+     <h2>Key Personal Attributes</h2>
 <p>Active person with ability and willingness to learn and build a career within an organisation.</p>
 <p>Ability to work with clients following company rules and conditions.</p>
 <p>Always complete a job with the utmost quality.</p> 
@@ -188,10 +197,22 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Have a valid Card ID of NSW.</p>
 <p>Physically fit and motivated.</p>
 </div>
-<div id="about_page#about" class="tabcontent">About me</div>
-</div>
+<div id="about" class="tabcontent">
+    <h2>About me</h2>
+        <p>What is it to be a professional?</p>
+        <p>Do you find it hard to manage staff, frameworks and everything that is required for a company?</p>
+        <p>When I was a kid, I dreant of being a good businessman, not like a doctor or a pilot
+        as others were dreaming that age.</p>
+       <p>Nevertheless, my dream came true. 
+       After much hard study and reading books I am ready for you to challenge my knowledge and skills in practice.</p>
+       <p>I have gained much knowledge in IT, frameworks and management areas. 
+       My good friends call me "big fish" in IT and business,
+        probably not because I am too good with it, but because I am opened with helping others through bad times.
+        </p> 
+       <p>On my site you will find out more about my life experience, education and the most important skills in your areas.</p>
+       </div>
 <main class="content">
-        <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo">
+        <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image">
 
 </main>
 <script>
