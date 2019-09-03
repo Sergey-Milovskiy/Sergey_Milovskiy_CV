@@ -11,6 +11,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
 
  <title>Mr. Milovskiy</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {margin:0;
     font-size: 28px;
@@ -79,7 +80,26 @@ body {margin:0;
     top: 75px;
      right: 25px;
 }
+.icon-bar {
+    position: absolute;
+    top: 25px;
+     right: 25px;
+  width: 90px;
+  background-color: rgb(191, 192, 255);
+}
 
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(89, 92, 255);
+}
 </style>
  </head>
  <body>
@@ -95,6 +115,9 @@ body {margin:0;
 </div></header>-->
 
     <div class="header">
+            <div class="icon-bar">
+                    <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
+                </div>
                 <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image2">
                 <h1 class="text">Sergey Milovskiy</h1>
     </div>
