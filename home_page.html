@@ -10,14 +10,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
  <title>Mr. Milovskiy</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin:0;}
+body {margin:0;
+    font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;}
 
 .navbar {
   overflow: hidden;
   background-color: rgb(52, 86, 136);
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .navbar a {
@@ -31,14 +30,29 @@ body {margin:0;}
 }
 
 .navbar a:hover {
-  background: rgb(74, 195, 252);
-  color: rgb(20, 60, 241);
+  background: rgb(33, 225, 231);
+  color: rgb(61, 14, 105);
+}
+#navbar a.active {
+  background-color: rgb(76, 119, 175);
+  color: rgb(52, 86, 136);
 }
 
-.main {
-  padding: 100px;
-  margin-top: 200px;
-  height: 2000px; /* Used in this example to enable scrolling */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header {
+  background-color: #6670ff;
+  padding: 30px;
+  text-align: center;
+}
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
 </style>
  </head>
@@ -53,16 +67,21 @@ body {margin:0;}
 <li><a href = "home_page.html#key_attributes">Key Personal Attributes</a></li>
 <li><a href = "about_page.html#about">About me</a></li>
 </div></header>-->
-<header><div class="navbar">
-    <a href = "home_page.html#employment">Employment History</a></li>
-    <a href = "home_page.html#education">Education</a></li>
-    <a href = "home_page.html#software">Software Knowledge</a></li>
-    <a href = "home_page.html#hardware">Hardware Knowledge</a></li>
-    <a href = "home_page.html#key_attributes">Key Personal Attributes</a></li>
-    <a href = "about_page.html#about">About me</a></li>
+
+    <div class="header">
+                <h1>Sergey Milovskiy</h1>
+                <h2>This is my CV</h2>
+    </div>
+    <div class="navbar">
+    <a href="home_page.html#employment">Employment History</a></li>
+    <a href="home_page.html#education">Education</a></li>
+    <a href="home_page.html#software">Software Knowledge</a></li>
+    <a href="home_page.html#hardware">Hardware Knowledge</a></li>
+    <a href="home_page.html#key_attributes">Key Personal Attributes</a></li>
+    <a class="active" href="about_page.html#about">About me</a></li>
     
-  </div></header>
-<main style="margin-top:55px;"> <!-- style="margin-top:200px;" -->
+    </div>
+<main class="content"> <!-- style="margin-top:200px;" -->
 
     <h2 id = "employment">Employment History</h2>
  <h3>August 2019 &#8212; now	</h3>
@@ -170,5 +189,21 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Physically fit and motivated.</p>
 </main>
 
+
+
+<script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 </html>
