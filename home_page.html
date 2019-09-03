@@ -8,19 +8,52 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
 <html lang=”en”>
  <head>
  <title>Mr. Milovskiy</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
  </head>
  <body>
  <header style="position:fixed;margin-top:0;top:0;left:0;margin-left:0;width:100%;min-width:980px;bottom:0px;" id="site_header">
     <h1>Sergey Milovskiy</h1>
-    <nav><ul>
+    <div class="navbar">
 <li><a href = "home_page.html#employment">Employment History</a></li>
 <li><a href = "home_page.html#education">Education</a></li>
 <li><a href = "home_page.html#software">Software Knowledge</a></li>
 <li><a href = "home_page.html#hardware">Hardware Knowledge</a></li>
 <li><a href = "home_page.html#key_attributes">Key Personal Attributes</a></li>
 <li><a href = "about_page.html#about">About me</a></li>
-</ul></nav></header>
-<main style="margin-top:200px;">
+</div></header>
+<main> <!-- style="margin-top:200px;" -->
 
     <h2 id = "employment">Employment History</h2>
  <h3>August 2019 &#8212; now	</h3>
