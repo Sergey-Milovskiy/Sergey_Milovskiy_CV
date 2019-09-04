@@ -57,6 +57,23 @@
   background-color: #8e95ff;
  /* color: white; */
 }
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff
+}
+tr:nth-child(odd) {
+  background-color: #b3e9f1
+}
  </style> </head>
  <body>
         <div class="header">
@@ -71,6 +88,115 @@
  <h1 id="actor">SERGEY MILOVSKIY</h1>
  <img src="pic/actor.png" alt="Actor Photo" class="image1">
 
+ <table id="myTable">
+  <tr>
+    <th>Skills</th>
+    <th> </th>
+  </tr>
+  <tr>
+    <td>Languages</td>
+    <td>Belarusian, English, German, Russian, Ukranian</td>
+  </tr>
+  <tr>
+    <td>Accents</td>
+    <td>German, Russian</td>
+  </tr>
+  <tr>
+    <td>Cycling</td>
+    <td>Cycling (General), Downhill Biking, Mountain Biking, Road Biking</td>
+  </tr>
+  <tr>
+    <td>Extreme Sports</td>
+    <td>Sky Diving</td>
+  </tr>
+  <tr>
+    <td>Outdoor Sports</td>
+    <td>Hiking, Hunting, Mountain Climbing</td>
+  </tr>
+  <tr>
+    <td>Recreational Sports</td>
+    <td>Bowling, Laser Tag, Paintball</td>
+  </tr>
+  <tr>
+    <td>Table Sports</td>
+    <td>Air Hockey, Billiards</td>
+  </tr>
+  <tr>
+    <td>Team Sports</td>
+    <td>Beach Volleyball, Ice Hockey, Volleyball</td>
+  </tr>
+  <tr>
+    <td>Track and Field</td>
+    <td>Broad Jump, Distance Running, Marathon, Running Sprinting</td>
+  </tr>
+  <tr>
+    <td>Water Sports</td>
+    <td>Body Surfing, Bodyboarding, Diving, Scuba Diving, Swimming (Back Stroke), Swimming (Breast Stroke), Swimming (Butterfly), Swimming (Freestyle), Swimming (General)</td>
+  </tr>
+  <tr>
+    <td>Winter Sports</td>
+    <td>Biathlon, Cross Country Skiing, Ice Skating, Snow Skiing, Speed Skating</td>
+  </tr>
+  <tr>
+    <td>Combat Sports</td>
+    <td>Boxing</td>
+  </tr>
+  <tr>
+    <td>Martial Arts</td>
+    <td>Sambo</td>
+  </tr>
+  <tr>
+    <td>Weapons & Firearms</td>
+    <td>Automatic Weapon, Broadsword, Handgun, Rifle, Swords, Tonfa</td>
+  </tr>
+  <tr>
+    <td>Hobbies</td>
+    <td>Carpentry, Cooking, Gaming (Video/Computer)</td>
+  </tr>
+  <tr>
+    <td>Equestrian Sports</td>
+    <td>Horseback Riding (General)</td>
+  </tr>
+</table>
+
+
+<script>
+  function sortTable() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("myTable");
+    switching = true;
+    /*Make a loop that will continue until
+    no switching has been done:*/
+    while (switching) {
+      //start by saying: no switching is done:
+      switching = false;
+      rows = table.rows;
+      /*Loop through all table rows (except the
+      first, which contains table headers):*/
+      for (i = 1; i < (rows.length - 1); i++) {
+        //start by saying there should be no switching:
+        shouldSwitch = false;
+        /*Get the two elements you want to compare,
+        one from current row and one from the next:*/
+        x = rows[i].getElementsByTagName("TD")[0];
+        y = rows[i + 1].getElementsByTagName("TD")[0];
+        //check if the two rows should switch place:
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        /*If a switch has been marked, make the switch
+        and mark that a switch has been done:*/
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
+    }
+  }
+  </script>
+  
 </main>
 </body>
 </html>
