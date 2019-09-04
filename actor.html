@@ -49,6 +49,7 @@
 }
 .image1
 {
+    position: absolute;
     width: 15%;
     display: block;
   margin-left: 0%;
@@ -66,6 +67,12 @@ table {
   width: 100%;
   border: 1px solid rgb(189, 189, 189);
 }
+table1 {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid rgb(189, 189, 189);
+}
+
 
 th, td {
   text-align: left;
@@ -88,7 +95,7 @@ tr:nth-child(odd) {
  <body>
         <div class="header">
                 <div class="icon-bar">
-                        <a href="home_page.html"><i class="fa fa-home"></i></a> 
+                        <a href="home_page.html#about"><i class="fa fa-home"></i></a> 
                         <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
                     </div>
                     <img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image">
@@ -99,8 +106,29 @@ tr:nth-child(odd) {
 
  <h1 id="actor">Actor Resume</h1>
  <img src="pic/actor.png" alt="Actor Photo" class="image1">
-
- <table id="myTable">
+<table1 id="attributes">
+    <tr>
+        <th>Attributes</th>
+        <th> </th>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+     <td>Hair Color</td>
+     <td>Brown</td>
+    </tr>
+    <tr>
+     <td>Eye Color</td>
+     <td>Brown</td>
+    </tr>
+    <tr>
+     <td>Metric Height</td>
+     <td>173 cm.</td>
+    </tr>
+</table1>
+ <table id="skills">
   <tr>
     <th>Skills</th>
     <th> </th>
@@ -175,7 +203,7 @@ tr:nth-child(odd) {
 <script>
   function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("myTable");
+    table = document.getElementById("skills");
     switching = true;
     /*Make a loop that will continue until
     no switching has been done:*/
@@ -183,6 +211,40 @@ tr:nth-child(odd) {
       //start by saying: no switching is done:
       switching = false;
       rows = table.rows;
+      /*Loop through all table rows (except the
+      first, which contains table headers):*/
+      for (i = 1; i < (rows.length - 1); i++) {
+        //start by saying there should be no switching:
+        shouldSwitch = false;
+        /*Get the two elements you want to compare,
+        one from current row and one from the next:*/
+        x = rows[i].getElementsByTagName("TD")[0];
+        y = rows[i + 1].getElementsByTagName("TD")[0];
+        //check if the two rows should switch place:
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        /*If a switch has been marked, make the switch
+        and mark that a switch has been done:*/
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
+    }
+  }
+  function sortTable1() {
+    var table1, rows, switching, i, x, y, shouldSwitch;
+    table1 = document.getElementById("attributes");
+    switching = true;
+    /*Make a loop that will continue until
+    no switching has been done:*/
+    while (switching) {
+      //start by saying: no switching is done:
+      switching = false;
+      rows = table1.rows;
       /*Loop through all table rows (except the
       first, which contains table headers):*/
       for (i = 1; i < (rows.length - 1); i++) {
