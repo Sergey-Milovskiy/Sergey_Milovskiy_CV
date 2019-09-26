@@ -11,12 +11,24 @@
   top: 100px;
   text-align: center;
 }
+.header_actor {
+    background-image: url("../pic/actor_background.png");
+  color: white;
+  padding: 30px;
+  top: 100px;
+  text-align: center;
+}
 
 
-body {margin:0;
+
+
+.body_contact {margin:0;
     font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
+.body_actor {margin:0;
+    font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;}
 
 
 input[type=text], select, textarea {
@@ -43,20 +55,93 @@ input[type=submit]:hover {
   background-color: #6670ff;
 }
 
+
+
+
+
 .text_contact
 {
     position: absolute;
     top: 60px;
      right: 150px;
 }
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .content_actor {
+    padding: 16px;
+    background-color: #8e95ff;
+   /* color: white; */
+  }
+  .text_name
+  {
+      position: absolute;
+      top: 60px;
+       right: 150px;
+  }
+  .text_actor_details
+  {
+      position: absolute;
+      top:55%;
+       right: 55%;
+       display: block;
+       color:white;
+  }
+  .text_actor_number
+  {
+      position: absolute;
+      top:61%;
+       right:48.2%;
+       display: block;
+       color:white;
+  }
+  .text_actor_email
+  {
+      position: absolute;
+      top:66%;
+       right:34.8%;
+       display: block;
+       color:white;
+  }
+  .text_actor_dob
+  {
+      position: absolute;
+      top:71%;
+       right:43.65%;
+       display: block;
+       color:white;
+  }
+  .text_color
+  {
+       color:white;
+  
+  }
 
-.header {
-  background-color: #6670ff;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
-.image
+
+
+  .table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px #0856A3;
+  }
+  th, td {
+    text-align: left;
+    padding: 16px;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #8e95ff;
+  }
+  tr:nth-child(odd) {
+    background-color: #7d84e6;
+  }
+
+
+
+
+.image_logo
 {
     width: 20%;
     display: block;
@@ -65,11 +150,24 @@ input[type=submit]:hover {
   border-radius: 99%;
 
 }
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.image_actor_photo
+{
+    position: absolute;
+    width: 13.5%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top:53.5%;
+   left:18.5%;
+  border-radius: 0%;
+
 }
+
+
+
+
+
+
 .icon-bar {
     position: absolute;
     top: 25px;
@@ -92,3 +190,26 @@ input[type=submit]:hover {
 }
 
 
+
+
+
+
+#top_btn_actor {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color:royalBlue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #top_btn_actor:hover {
+    background-color:navy;
+  }
+  

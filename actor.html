@@ -4,188 +4,35 @@
         <link rel="shortcut icon" href="pic/Sergey_Milovskiy_LOGO.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="stylesheet" href="css/stylesheet.css">
+
  <title>Actor</title>
  <style>
-   body {margin:0;
-    font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;}
 
- .header {
-    background-color: #6670ff;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  }
- 
-.icon-bar {
-    position: absolute;
-    top: 25px;
-     right: 25px;
-  width: 90px;
-  background-color: rgb(191, 192, 255);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: rgb(89, 92, 255);
-}
-.image
-{
-    width: 20%;
-    display: block;
-  margin-left: 0%;
-  margin-right: auto;
-  border-radius: 99%;
-
-}
-.image1
-{
-    position: absolute;
-    width: 13.5%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top:53.5%;
-   left:18.5%;
-  border-radius: 0%;
-
-}
-.image2
-{
-    width: 20%;
-    display: block;
-  margin-left: 0%;
-  margin-right: auto;
-  border-radius: 99%;
-
-}
-.content {
-  padding: 16px;
-  background-color: #8e95ff;
- /* color: white; */
-}
-.table {
-  border-spacing: 0;
-  width: 100%;
-  border: 1px #0856A3;
-}
-
-th, td {
-  text-align: left;
-  padding: 16px;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #8e95ff;
-}
-tr:nth-child(odd) {
-  background-color: #7d84e6;
-}
-.text
-{
-    position: absolute;
-    top: 60px;
-     right: 150px;
-}
-.text1
-{
-    position: absolute;
-    top:55%;
-     right: 55%;
-     display: block;
-     color:white;
-
-}
-.text2
-{
-    position: absolute;
-    top:61%;
-     right:48.2%;
-     display: block;
-     color:white;
-
-}
-.text3
-{
-    position: absolute;
-    top:66%;
-     right:34.8%;
-     display: block;
-     color:white;
-
-}
-.text4
-{
-    position: absolute;
-    top:71%;
-     right:43.65%;
-     display: block;
-     color:white;
-
-}
-.text_color
-{
-     color:white;
-
-}
-.header2 {
-    background-image: url("pic/actor_background.png");
-  color: white;
-  padding: 30px;
-  top: 100px;
-  text-align: center;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 99;
-  font-size: 28px;
-  border: none;
-  outline: none;
-  background-color:royalBlue;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-#myBtn:hover {
-  background-color:navy;
-}
- </style> </head>
- <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ </style> 
+ </head>
+ <body class="body_actor">
+    <button onclick="topFunction()" id="top_btn_actor" title="Go to top">Top</button>
 
         <div class="header">
                 <div class="icon-bar">
                         <a href="index.html#about"><i class="fa fa-home"></i></a> 
                         <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
                     </div>
-                    <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image2"></a>
-                    <h1 class="text">Sergey Milovskiy</h1>
+                    <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image_logo"></a>
+                    <h1 class="text_name">Sergey Milovskiy</h1>
 
             </div>
-            <div class="header2">
+            <div class="header_actor">
                 <h2 id="actor">Actor Resume</h2>
                 </div>
-            <main class="content">
+            <main class="content_actor">
 
- <img src="pic/actor.png" alt="Actor Photo" class="image1">
- <h2 id="contact_mctv" class="text1">Details:</h2>
- <h3 class="text2">+614 8123 1900</h3>
- <h3 class="text3">sergey.milovskiy99@gmail.com</h3>
- <h3 class="text4">D.O.B.: 22 June 1999</h3>
+ <img src="pic/actor.png" alt="Actor Photo" class="image_actor_photo">
+ <h2 id="contact_mctv" class="text_actor_details">Details:</h2>
+ <h3 class="text_actor_number">+614 8123 1900</h3>
+ <h3 class="text_actor_email">sergey.milovskiy99@gmail.com</h3>
+ <h3 class="text_actor_dob">D.O.B.: 22 June 1999</h3>
 <table id="attributes">
     <tr>
         <th>Attributes</th>
@@ -282,7 +129,7 @@ tr:nth-child(odd) {
 <script>
 
       //Get the button
-      var mybutton = document.getElementById("myBtn");
+      var mybutton = document.getElementById("top_btn_actor");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
