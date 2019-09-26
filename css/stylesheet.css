@@ -29,6 +29,11 @@
 .body_actor {margin:0;
     font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;}
+.body_index {margin:0;
+    font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;}
+
+
 
 
 input[type=text], select, textarea {
@@ -75,6 +80,11 @@ input[type=submit]:hover {
     background-color: #8e95ff;
    /* color: white; */
   }
+  .content_index {
+    padding: 16px;
+    background-color: #6670ff;
+  
+  }
   .text_name
   {
       position: absolute;
@@ -118,10 +128,26 @@ input[type=submit]:hover {
        color:white;
   
   }
+  .text_table_index{
+    max-width:70%;
+     margin: auto;
+     margin-bottom:0%;
+   }
+   .text_header_index{
+     max-width:30%;
+     margin-left:15%;
+     margin-bottom:5%;
+   }
 
 
 
-  .table {
+
+  .table_attributes_actor {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px #0856A3;
+  }
+  .table_skills_actor {
     border-spacing: 0;
     width: 100%;
     border: 1px #0856A3;
@@ -137,6 +163,40 @@ input[type=submit]:hover {
   tr:nth-child(odd) {
     background-color: #7d84e6;
   }
+
+
+
+
+  .tablink {
+    background-color: #0856A3;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.66666666666666666666666%;
+  }
+  .tablink:hover {
+    background-color: #87CAE6;
+  }
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(255, 255, 255);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #employment {background-image: url("../pic/employment.png")}
+  #education {background-image: url("../pic/education.png")}
+  #software {background-image: url("../pic/software.png")}
+  #hardware {background-image: url("../pic/hardware.jpg")}
+  #key_attributes {background-image: url("../pic/skills.jpg")}
+  #about {background-image: url("../pic/blue.jpg")}
+
+
 
 
 
@@ -162,8 +222,20 @@ input[type=submit]:hover {
   border-radius: 0%;
 
 }
-
-
+.image_index_empl
+{
+    width: 6.5%;
+    display: block;
+  margin-left: 0%;
+  margin-right: auto;
+}
+.image_index_edu
+{
+    width: 7%;
+    display: block;
+  margin-left: 0%;
+  margin-right: auto;
+}
 
 
 
@@ -212,4 +284,61 @@ input[type=submit]:hover {
   #top_btn_actor:hover {
     background-color:navy;
   }
+  #top_btn_index {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color:Blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #top_btn_index:hover {
+    background-color:navy;
+  }
+  .actor_resume_btn_index {
+    position: absolute;
+    top:74.3%;
+    left:26%;
+    background-color: #0856A3;
+    border: none;
+    border-radius:15%;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .actor_resume_btn_index:hover {
+    background-color:navy;
+  }
+  .actor_resume_btn_index:after {
+    content: "";
+    background: #87CAE6;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
   
+  .actor_resume_btn_index:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }

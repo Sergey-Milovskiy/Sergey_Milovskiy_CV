@@ -17,190 +17,18 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu
  <title>Mr. Milovskiy</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;
-    font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;}
-
-  .image
-{
-    width: 25%;
-    display: block;
-  margin-left: 0%;
-  margin-right: auto;
-}
-.image2
-{
-    width: 20%;
-    display: block;
-  margin-left: 0%;
-  margin-right: auto;
-  border-radius: 99%;
-
-}
-.icon
-{
-  width: 3%;
-    display: block;
-  margin-left: 0%;
-  margin-right: auto;
-}
-.content {
-  padding: 16px;
-  background-color: #6670ff;
-
-}
-.header {
-  background-color: #6670ff;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
-.tablink {
-  background-color: #0856A3;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 16.66666666666666666666666%;
-}
-.tablink:hover {
-  background-color: #87CAE6;
-}
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: rgb(255, 255, 255);
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-
-#employment {background-image: url("pic/employment.png")}
-#education {background-image: url("pic/education.png")}
-#software {background-image: url("pic/software.png")}
-#hardware {background-image: url("pic/hardware.jpg")}
-#key_attributes {background-image: url("pic/skills.jpg")}
-#about {background-image: url("pic/blue.jpg")}
-
-.text
-{
-    position: absolute;
-    top: 60px;
-     right: 150px;
-}
-.text_table{
- max-width:70%;
-  margin: auto;
-  margin-bottom:0%;
-}
-.text_header{
-  max-width:30%;
-  margin-left:15%;
-  margin-bottom:5%;
-}
-.icon-bar {
-    position: absolute;
-    top: 25px;
-     right: 25px;
-  width: 90px;
-  background-color: rgb(191, 192, 255);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: rgb(89, 92, 255);
-}
-
-.button {
-  position: absolute;
-  top:74.3%;
-  left:26%;
-  background-color: #0856A3;
-  border: none;
-  border-radius:15%;
-  font-size: 28px;
-  color: #FFFFFF;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-.button:hover {
-  background-color:navy;
-}
-.button:after {
-  content: "";
-  background: #87CAE6;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 99;
-  font-size: 28px;
-  border: none;
-  outline: none;
-  background-color:Blue;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-#myBtn:hover {
-  background-color:navy;
-}
-</style>
+ <link rel="stylesheet" href="css/stylesheet.css">
  </head>
- <body>
- <!--<header style="position:fixed;margin-top:0;top:0;left:0;margin-left:0;width:100%;min-width:980px;bottom:0px;" id="site_header">
-    <h1>Sergey Milovskiy</h1>
-    <div class="navbar">
-<li><a href = "index.html#employment">Employment History</a></li>
-<li><a href = "index.html#education">Education</a></li>
-<li><a href = "index.html#software">Software Knowledge</a></li>
-<li><a href = "index.html#hardware">Hardware Knowledge</a></li>
-<li><a href = "index.html#key_attributes">Key Personal Attributes</a></li>
-<li><a href = "about_page.html#about">About me</a></li>
-</div></header>-->
+ 
+ <body class="body_index">
 
     <div class="header">
             <div class="icon-bar">
                     <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
                     <a href="actor.html#actor"><i class="fa fa-globe"></i></a> 
                   </div>
-                <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image2"></a>
-                <h1 class="text">Sergey Milovskiy</h1>
+                <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image_logo"></a>
+                <h1 class="text_name">Sergey Milovskiy</h1>
     </div>
     
 <button class="tablink" onclick="openPage('employment', this, 'RoyalBlue')">Employment History</button>
@@ -210,17 +38,18 @@ body {margin:0;
 <button class="tablink" onclick="openPage('key_attributes', this, 'DodgerBlue')">Key Personal Attributes</button>
 <button class="tablink" onclick="openPage('about', this, 'SteelBlue')" id="defaultOpen">About me</button>
 <!-- https://www.quackit.com/css/css_color_codes.cfm -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="top_btn_index" title="Go to top">Top</button>
 
     <div id="employment" class="tabcontent">
 
         <h2>Employment History</h2>
  <h3>August 2019 &#8212; now  </h3>
- <p>Actor at MCTV Model And Talent Management</p>
- <img src="pic/MCTVLogo.png" alt="Logo" class="image">
- <a href="actor.html#actor"><button class="button">Actor Resume</button></a>
- <p>Joiner at Install Nation Group</p>
- <img src="pic/install.jpg" alt="Logo" class="image">
+ <p>Actor at MCTV Model And Talent Management<img src="pic/MCTVLogo.png" alt="company's logo" class="image_index_empl"></p>
+ 
+ <a href="actor.html#actor"><button class="actor_resume_btn_index">Actor Resume</button></a>
+
+ <p>Joiner at Install Nation Group <img src="pic/install.jpg" alt="company's logo" class="image_index_empl"> </p>
+
  <h4>Job Description</h4>
  <p>Creative insight. Working with good stage, screen and/or vocal presence with the ability to memorise lines and the ability to enter into another character 
 and engage with an audience. 
@@ -228,16 +57,15 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Woodwork and Metalwork. Installation of workstations and PC hardware, such as (electricity), monitors and monitor arms.</p>
 <h3>February 2019 &#8212; August 2019 </h3>
  <p>Cite Manager at Alfa Class Interiors </p>
- <p>Installer of the Hardware at Alfa Class Interiors</p>
- <img src="pic/alfa.png" alt="Logo" class="image">
+ <p>Installer of the Hardware at Alfa Class Interiors <img src="pic/alfa.png" alt="company's logo" class="image_index_empl"> </p>
+
  <h4>Job Description</h4>
  <p>Problem-solving. Clarified the distribution of tasks and responsibilities, and improved the functioning of internal processes.</p>
  <p>Woodwork and Metalwork. Installation of workstations and PC hardware, such as (electricity), monitors and monitor arms.</p>
  <h3>November 2017 &#8212; January 2019</h3>
- <p>Installer of the Hardware at Alfa Class Interiors</p>
- <img src="pic/alfa.png" alt="Logo" class="image">
- <p>IT support at Alfa Class Interiors (Direct Ergonomics) (contractor)</p>
- <img src="pic/direct.png" alt="Logo" class="image">
+ <p>Installer of the Hardware at Alfa Class Interiors <img src="pic/alfa.png" alt="company's logo" class="image_index_empl"> </p>
+
+ <p>IT support at Alfa Class Interiors (Direct Ergonomics) (contractor) <img src="pic/direct.png" alt="company's logo" class="image_index_empl"> </p>
  <h4>Job Description</h4>
  <p>Woodwork and Metalwork. Installation of workstations and PC hardware, such as (electricity), monitors and monitor arms.</p>
  <p>Customer care. Assisting customers with software issues, and giving them supporting documentation and feedback.</p> 
@@ -248,39 +76,45 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Marketing. Admin money management with full access to cash registers performing tasks such as counting money, separating charge slips, coupons, and vouchers, balancing cash drawers, and making deposits.</p>
 </div>
 <div id="education" class="tabcontent">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <h2>Formal Education and Training</h2>
 <h3>Education</h3>
 <p>September 2005 &#8212; June 2016</p>
-<p>School &#8470; 1498 (HSC) (Completed)</p>
-<img src="pic/1498.jpg" alt="Logo" class="image">
+
+<p><img src="pic/1498.jpg" alt="education's logo" class="image_index_edu">  School &#8470; 1498 (HSC) (Completed)</p>
+
 <p>September 2016 &#8212; November 2017</p>
-<p>Witte University, Russia, Moscow</p>
+
+<p><img src="pic/witte.jpg" alt="education's logo" class="image_index_edu">  Witte University, Russia, Moscow</p>
+
 <p>Bachelor of Applied Informatics (Not completed)</p>
-<img src="pic/witte.jpg" alt="Logo" class="image">
+
 <p>November 2017 &#8212; February 2018</p>
-<p>CQUniversity, Australia, Sydney</p>
+
+<p><img src="pic/cqu.png" alt="education's logo" class="image_index_edu">CQUniversity, Australia, Sydney</p>
+
 <p>English for Academic Purposes 2 &#8212; EAP2 (ET3P2, 2017) (Completed)</p>
-<img src="pic/cqu.png" alt="Logo" class="image">
+
 <p>March 2018 &#8212; February 2019</p>
-<p>CQUniversity, Australia, Sydney</p>
+<p><img src="pic/cqu.png" alt="education's logo" class="image_index_edu"> CQUniversity, Australia, Sydney</p>
+
 <p>Bachelor of Information Technology (Not completed)</p>
-<img src="pic/cqu.png" alt="Logo" class="image">
+
 <p>March 2019 &#8212; now</p>
-<p>Wentworth Institute, Australia, Sydney</p>
+
+<p><img src="pic/wentworth.png" alt="education's logo" class="image_index_edu">  Wentworth Institute, Australia, Sydney</p>
+
 <p>Bachelor of Interactive Media (In progress)</p>
-<img src="pic/wentworth.png" alt="Logo" class="image">
 
 <h3>Formal Training</h3>
 <p>White Card (Date of Issue: 09/12/2017)</p>
 <p>Card &#8470;: CGI1504447SEQ01</p>
 </div>
  <div id="software" class="tabcontent">
+
      <h2>Software Knowledge</h2>
  <h3>Presentation for web and print</h3>
  <dl>
-  <!-- <img src="pic/icon/Photoshop.png" alt="Logo" class="icon">--> 
 <dd>Adobe Photoshop</dd>
 <dd>Adobe Illustrator</dd>
 <dd>Adobe Animate (Flash)</dd>
@@ -322,6 +156,7 @@ Having the confidence, energy and dedication to perform. </p>
  </dl>
 </div>
  <div id="hardware" class="tabcontent">
+
     <h2>Hardware Knowledge</h2>
 <dl>
 <dd>Digital and Film Camera.</dd>
@@ -344,10 +179,11 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Physically fit and motivated.</p>
 </div>
 <div id="about" class="tabcontent">
-  <div class="text_header">
+
+  <div class="text_header_index">
     <h2>About me</h2>
   </div>
-    <div class="text_table">
+    <div class="text_table_index">
         <p>What is it to be a professional?</p>
         <p>Do you find it hard to manage staff, frameworks and everything that is required for a company?</p>
         <p>When I was a kid, I dreant of being a good businessman, not like a doctor or a pilot
@@ -360,30 +196,14 @@ Having the confidence, energy and dedication to perform. </p>
         </p> 
        <p>On my site you will find out more about my life experience, education and the most important skills in your areas.</p>
       </div></div>
-<main class="content">
+<main class="content_index">
 <p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
-<p>  </p>
+
 </main>
-<footer class="content">
+<footer class="content_index">
 
   <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
-  <p>  </p>
+
 
 </footer>
 <script>
@@ -405,7 +225,7 @@ Having the confidence, energy and dedication to perform. </p>
 document.getElementById("defaultOpen").click();
       
       //Get the button
-var mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("top_btn_index");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
