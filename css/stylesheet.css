@@ -19,12 +19,6 @@ body {margin:0;
 * {box-sizing: border-box;}
 
 
-
-body {margin:0;
-    font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -49,7 +43,7 @@ input[type=submit]:hover {
   background-color: #6670ff;
 }
 
-.text
+.text_contact
 {
     position: absolute;
     top: 60px;
