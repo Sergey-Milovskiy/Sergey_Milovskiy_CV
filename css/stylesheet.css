@@ -171,33 +171,40 @@ input[type=submit]:hover {
 
   .wrapper_actor {
     display: grid;
+    border: 1px solid #dfdfdf;
 grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
-    grid-template-areas: "a b c d";
+    grid-template-areas: "a b b c c";
     background-color: rgb(126, 90, 90);
-    color: #444;
+    color: rgb(255, 255, 255);
 }
 .photo_actor {
   grid-area: a;
     grid-column: 1;
     grid-row: 1;
+    border: 1px solid #dfdfdf;
+
 }
 .attributes_actor {
   grid-area: b;
     grid-column: 2;
     grid-row: 2;
+    border: 1px solid #dfdfdf;
 
 }
 .sizes_actor {
   grid-area: c;
     grid-column: 3;
     grid-row: 2;
+    border: 1px solid #dfdfdf;
+
 }
 .skills_actor {
-  grid-area: d;
     grid-column: 1;
     grid-row: 3;
+        border: 1px solid #dfdfdf;
+
 }
 
 
