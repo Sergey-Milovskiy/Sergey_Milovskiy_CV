@@ -179,6 +179,13 @@ grid-gap: 10px;
     background-color: rgb(126, 90, 90);
     color: rgb(255, 255, 255);
 }
+.box_actor {
+  background-color: rgb(53, 5, 5);
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
 .photo_actor {
 
     grid-column-start: 1;
