@@ -29,21 +29,43 @@ https://drafts.csswg.org/css-grid/
 
     <div class="header">
             <div class="icon-bar">
-                    <a href="contact.html#contact"><i class="fa fa-envelope"></i></a> 
-                    <a href="actor.html#actor"><i class="fa fa-globe"></i></a> 
+                    <a href="contact.html#contact"><i class="fa fa-envelope" title="Contact Me"></i></a> 
+                    <a href="actor.html#actor"><i class="fa fa-globe" title="Actor Resume"></i></a> 
                   </div>
-                <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image_logo"></a>
+                <a href="index.html"><img src="pic/Sergey_Milovskiy_LOGO.png" alt="Logo" class="image_logo" title="Home Page"></a>
                 <h1 class="text_name">Sergey Milovskiy</h1>
     </div>
     
+<button class="tablink" onclick="openPage('about', this, 'SteelBlue')" id="defaultOpen">About me</button>   
 <button class="tablink" onclick="openPage('employment', this, 'RoyalBlue')">Employment History</button>
 <button class="tablink" onclick="openPage('education', this, 'MediumBlue')">Education</button>
 <button class="tablink" onclick="openPage('software', this, 'blue')">Software Knowledge</button>
 <button class="tablink" onclick="openPage('hardware', this, 'Navy')">Hardware Knowledge</button>
 <button class="tablink" onclick="openPage('key_attributes', this, 'DodgerBlue')">Key Personal Attributes</button>
-<button class="tablink" onclick="openPage('about', this, 'SteelBlue')" id="defaultOpen">About me</button>
+
 <!-- https://www.quackit.com/css/css_color_codes.cfm -->
 <button onclick="topFunction()" id="top_btn_index" title="Go to top">Top</button>
+
+
+<div id="about" class="tabcontent">
+
+  <div class="text_header_index">
+    <h2>About me</h2>
+  </div>
+    <div class="text_table_index">
+        <p>What is it to be a professional?</p>
+        <p>Do you find it hard to manage staff, frameworks and everything that is required for a company?</p>
+        <p>When I was a kid, I dreant of being a good businessman, not like a doctor or a pilot
+        as others were dreaming that age.</p>
+       <p>Nevertheless, my dream came true. 
+       After much hard study and reading books I am ready for you to challenge my knowledge and skills in practice.</p>
+       <p>I have gained much knowledge in IT, frameworks and management areas. 
+       My good friends call me "big fish" in IT and business,
+        probably not because I am too good with it, but because I am opened with helping others through bad times.
+        </p> 
+       <p>On my site you will find out more about my life experience, education and the most important skills in your areas.</p>
+      </div></div>
+
 
     <div id="employment" class="tabcontent">
 
@@ -183,24 +205,7 @@ Having the confidence, energy and dedication to perform. </p>
 <p>Have a valid Card ID of NSW.</p>
 <p>Physically fit and motivated.</p>
 </div>
-<div id="about" class="tabcontent">
 
-  <div class="text_header_index">
-    <h2>About me</h2>
-  </div>
-    <div class="text_table_index">
-        <p>What is it to be a professional?</p>
-        <p>Do you find it hard to manage staff, frameworks and everything that is required for a company?</p>
-        <p>When I was a kid, I dreant of being a good businessman, not like a doctor or a pilot
-        as others were dreaming that age.</p>
-       <p>Nevertheless, my dream came true. 
-       After much hard study and reading books I am ready for you to challenge my knowledge and skills in practice.</p>
-       <p>I have gained much knowledge in IT, frameworks and management areas. 
-       My good friends call me "big fish" in IT and business,
-        probably not because I am too good with it, but because I am opened with helping others through bad times.
-        </p> 
-       <p>On my site you will find out more about my life experience, education and the most important skills in your areas.</p>
-      </div></div>
 <main class="content_index">
 <p>  </p>
 
