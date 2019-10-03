@@ -88,8 +88,9 @@ input[type=submit]:hover {
   .text_name
   {
       position: absolute;
-      top: 60px;
+      top: 54px;
        right: 150px;
+       font-style: italic;
   }
   .text_actor_details
   {
