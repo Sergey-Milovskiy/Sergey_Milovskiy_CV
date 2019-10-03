@@ -181,28 +181,36 @@ grid-gap: 10px;
 }
 .photo_actor {
   grid-area: a;
-    grid-column: 1;
-    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
     border: 1px solid #dfdfdf;
 
 }
 .attributes_actor {
   grid-area: b;
-    grid-column: 2;
-    grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
     border: 1px solid #dfdfdf;
 
 }
 .sizes_actor {
   grid-area: c;
-    grid-column: 3;
-    grid-row: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
     border: 1px solid #dfdfdf;
 
 }
 .skills_actor {
-    grid-column: 1;
-    grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 3;
         border: 1px solid #dfdfdf;
 
 }
