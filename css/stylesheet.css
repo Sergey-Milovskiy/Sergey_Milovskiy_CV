@@ -175,12 +175,12 @@ input[type=submit]:hover {
 grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
-    grid-template-areas: "a b b c c";
+    grid-template-areas: "a b c d e";
     background-color: rgb(126, 90, 90);
     color: rgb(255, 255, 255);
 }
 .photo_actor {
-  grid-area: a;
+
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -189,28 +189,74 @@ grid-gap: 10px;
 
 }
 .attributes_actor {
-  grid-area: b;
+
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
+  grid-row-end: 1;
+  border: 1px solid #dfdfdf;
+}
+.attributes_actor_text_1 {
+ 
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
   grid-row-end: 2;
-    border: 1px solid #dfdfdf;
-
+  border: 1px solid #dfdfdf;
+}
+.attributes_actor_text_2 {
+ 
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
 }
 .sizes_actor {
-  grid-area: c;
+
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 1;
     border: 1px solid #dfdfdf;
+}
+.sizes_actor_text_1 {
 
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
+}
+.sizes_actor_text_2 {
+
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
 }
 .skills_actor {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 3;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 4;
         border: 1px solid #dfdfdf;
 
 }
