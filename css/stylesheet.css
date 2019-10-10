@@ -193,6 +193,13 @@ grid-gap: 1px;
   padding: 20px;
   font-size: 75%;
 }
+.box_actor_head {
+  background-color: #7d84e6;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+}
 .photo_actor {
 
     grid-column-start: 1;
