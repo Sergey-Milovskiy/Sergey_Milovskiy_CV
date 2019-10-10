@@ -172,7 +172,7 @@ input[type=submit]:hover {
   .wrapper_actor {
     display: grid;
     border: 1px solid #dfdfdf;
-grid-gap: 10px;
+grid-gap: 1px;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-template-areas: "a b c d e";
@@ -184,14 +184,14 @@ grid-gap: 10px;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
-  font-size: 100%;
+  font-size: 75%;
 }
 .box_actor_2 {
   background-color: #7d84e6;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
-  font-size: 100%;
+  font-size: 75%;
 }
 .photo_actor {
 
@@ -370,6 +370,126 @@ grid-gap: 10px;
         border: 1px solid #dfdfdf;
 
 }
+.skills_actor_text_1_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 8;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 9;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 10;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 11;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 12;
+  grid-row-end: 12;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 13;
+  grid-row-end: 13;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 14;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_8 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 15;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_9 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 16;
+  grid-row-end: 16;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_10 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 17;
+  grid-row-end: 17;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_11 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 18;
+  grid-row-end: 18;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_12 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 19;
+  grid-row-end: 19;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_13 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 20;
+  grid-row-end: 20;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_14 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 21;
+  grid-row-end: 21;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_1_15 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 22;
+  grid-row-end: 22;
+        border: 1px solid #dfdfdf;
+
+}
 .skills_actor_text_2 {
   grid-column-start: 3;
   grid-column-end: 6;
@@ -378,6 +498,128 @@ grid-gap: 10px;
         border: 1px solid #dfdfdf;
 
 }
+.skills_actor_text_2_1 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 8;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 9;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_3 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 10;
+  grid-row-end: 10;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_4 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 11;
+  grid-row-end: 11;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_5 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 12;
+  grid-row-end: 12;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_6 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 13;
+  grid-row-end: 13;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_7 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 14;
+  grid-row-end: 14;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_8 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 15;
+  grid-row-end: 15;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_9 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 16;
+  grid-row-end: 16;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_10 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 17;
+  grid-row-end: 17;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_11 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 18;
+  grid-row-end: 18;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_12 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 19;
+  grid-row-end: 19;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_13 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 20;
+  grid-row-end: 20;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_14 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 21;
+  grid-row-end: 21;
+        border: 1px solid #dfdfdf;
+
+}
+.skills_actor_text_2_15 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 22;
+  grid-row-end: 22;
+        border: 1px solid #dfdfdf;
+
+}
+
+
 
 
   .tablink {
