@@ -88,8 +88,8 @@ input[type=submit]:hover {
   .text_name
   {
       position: absolute;
-      top: 54px;
-       right: 150px;
+      top: 26px;
+       left: 250px;
        font-style: italic;
   }
   .text_actor_details
@@ -305,7 +305,7 @@ grid-gap: 10px;
 
 .image_logo
 {
-    width: 10%;
+    width: 200px;
     display: block;
   margin-left: 0%;
   margin-right: auto;
@@ -314,7 +314,7 @@ grid-gap: 10px;
 .image_actor_photo
 {
    /* position: static;*/
-    width: 25%;
+    width: 300px;
     display: block;
   /*margin-left: auto;
   margin-right: auto;
