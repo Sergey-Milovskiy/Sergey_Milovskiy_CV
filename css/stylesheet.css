@@ -1,9 +1,55 @@
-.header {
+
+  .wrapper_header {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas: "a b c d e";
     background-color: #6670ff;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  }
+    color: rgb(255, 255, 255);
+}
+.box_header {
+  background-color: #6670ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  font-size: 75%;
+
+}
+.header_logo {
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
+  padding-right: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+
+}
+.header_text {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
+  padding-left: 0px;
+  padding-bottom: 50px;
+
+}
+.header_extra_menu {
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid #dfdfdf;
+  padding-bottom: 50px;
+
+}
   .header_contact {
     background-image: url("../pic/contact.png");
   color: white;
@@ -87,10 +133,9 @@ input[type=submit]:hover {
   }
   .text_name
   {
-      position: absolute;
-      top: 26px;
-       left: 250px;
-       font-style: italic;
+      position: relative;
+      top: 5px;
+      font-style: italic;
   }
   .text_actor_details
   {
@@ -146,7 +191,7 @@ input[type=submit]:hover {
   .wrapper_actor {
     display: grid;
     border: 1px solid #dfdfdf;
-grid-gap: 1px;
+    grid-gap: 1px;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
     grid-template-areas: "a b c d e";
@@ -647,11 +692,10 @@ grid-gap: 1px;
 
 .image_logo
 {
+    position: relative;
     width: 200px;
     display: block;
-  margin-left: 0%;
-  margin-right: auto;
-  border-radius: 99%;
+    border-radius: 99%;
 }
 .image_actor_photo
 {
