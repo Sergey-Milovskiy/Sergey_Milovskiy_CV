@@ -83,7 +83,7 @@ input[type=submit]:hover {
   .content_index {
     padding: 16px;
     background-color: #6670ff;
-  
+    color:white;
   }
   .text_name
   {
@@ -604,6 +604,7 @@ grid-gap: 1px;
   background-color: #0856A3;
   display: flex;
   flex-wrap: nowrap;
+
   /*color: white;
   float: left;
   border: none;
@@ -617,6 +618,8 @@ grid-gap: 1px;
 }
   .flex_box-container > nav {
     background-color: #87CAE6;
+    color: white;
+
     width: 16.666%;
     margin: 0px;
     float: left;
