@@ -143,32 +143,6 @@ input[type=submit]:hover {
 
 
 
-  .table_attributes_actor {
-    border-spacing: 0;
-    display:grid;
-    grid-template-rows: 300px 16px 16px;
-    width: 100%;
-    border: 1px #0856A3;
-  }
-  .table_skills_actor {
-    border-spacing: 0;
-    width: 100%;
-    border: 1px #0856A3;
-  }
-  th, td {
-    text-align: left;
-    padding: 16px;
-    color: white;
-  }
-  tr:nth-child(even) {
-    background-color: #8e95ff;
-  }
-  tr:nth-child(odd) {
-    background-color: #7d84e6;
-  }
-
-
-
   .wrapper_actor {
     display: grid;
     border: 1px solid #dfdfdf;
@@ -626,38 +600,43 @@ grid-gap: 1px;
 
 }
 
-
-
-
-  .tablink {
-    background-color: #0856A3;
-    color: white;
+.flex_box {
+  background-color: #0856A3;
+  display: flex;
+  flex-wrap: nowrap;
+  /*color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.66666666666666666666666%;
+  16.4369%;
+  */
+}
+  .flex_box-container > nav {
+    background-color: #87CAE6;
+    width: 16.666%;
+    margin: 0px;
     float: left;
-    border: none;
     outline: none;
     cursor: pointer;
+    text-align: center;
+    line-height: 75px;
     padding: 14px 16px;
     font-size: 17px;
-    width: 16.66666666666666666666666%;
-  }
-  .tablink:hover {
-    background-color: #87CAE6;
   }
   /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: rgb(255, 255, 255);
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #employment {background-image: url("../pic/employment.png")}
+ 
+  /* need to be deleted when finished
+  #employment_history {background-image: url("../pic/employment.png")}
   #education {background-image: url("../pic/education.png")}
   #software {background-image: url("../pic/software.png")}
   #hardware {background-image: url("../pic/hardware.jpg")}
   #key_attributes {background-image: url("../pic/skills.jpg")}
-  #about {background-image: url("../pic/blue.jpg")}
-
+  #index {background-image: url("../pic/blue.jpg")}
+*/
 
 
 
