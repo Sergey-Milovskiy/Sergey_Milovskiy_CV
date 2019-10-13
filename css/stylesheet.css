@@ -53,14 +53,14 @@
   .header_contact {
     background-image: url("../pic/contact.png");
   color: white;
-  padding: 30px;
+  padding: 15px;
   top: 100px;
   text-align: center;
 }
 .header_actor {
     background-image: url("../pic/actor_background.png");
   color: white;
-  padding: 30px;
+  padding: 15px;
   top: 100px;
   text-align: center;
 }
@@ -128,9 +128,41 @@ input[type=submit]:hover {
   }
   .content_index {
     padding: 16px;
-    background-color: #6670ff;
+    background-image: url("../pic/blue.jpg");
     color:white;
   }
+
+  .content_employment_history {
+    padding: 16px;
+    background-image: url("../pic/employment.png");
+    color:white;
+  }
+  .content_education {
+    padding: 16px;
+    background-image: url("../pic/education.png");
+    color:white;
+  }
+  .content_software {
+    padding: 16px;
+    background-image: url("../pic/software.png");
+    color:white;
+  }
+  .content_hardware {
+    padding: 16px;
+    background-image: url("../pic/hardware.jpg");
+    color:white;
+  }
+  .content_key_attributes {
+    padding: 16px;
+    background-image: url("../pic/skills.jpg");
+    color:white;
+  }
+  .content_footer {
+    background-color: #6670ff;
+    color: #fff;
+  }
+
+  
   .text_name
   {
       position: relative;
@@ -648,9 +680,11 @@ input[type=submit]:hover {
 .flex_box {
   background-color: #0856A3;
   display: flex;
-  flex-wrap: nowrap;
+  align-items: stretch;
 
-  /*color: white;
+  /*
+    flex-wrap: nowrap;
+  color: white;
   float: left;
   border: none;
   outline: none;
@@ -672,19 +706,10 @@ input[type=submit]:hover {
     cursor: pointer;
     text-align: center;
     line-height: 75px;
-    padding: 14px 16px;
+    padding: 15px;
     font-size: 17px;
   }
-  /* Style the tab content (and add height:100% for full page content) */
- 
-  /* need to be deleted when finished
-  #employment_history {background-image: url("../pic/employment.png")}
-  #education {background-image: url("../pic/education.png")}
-  #software {background-image: url("../pic/software.png")}
-  #hardware {background-image: url("../pic/hardware.jpg")}
-  #key_attributes {background-image: url("../pic/skills.jpg")}
-  #index {background-image: url("../pic/blue.jpg")}
-*/
+
 
 
 
