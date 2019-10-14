@@ -777,113 +777,122 @@ input[type=submit]:hover {
 
 
 .menu_btn_index {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
-
-
+  float: left;
 }
 .menu_btn_index:hover {
-  background-color:navy;
+  background-color:SteelBlue;
 
 }
 .menu_btn_employment {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
+  float: left;
 
 
 }
 .menu_btn_employment:hover {
-  background-color:navy;
+  background-color:RoyalBlue;
 
 }
 .menu_btn_education {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
+  float: left;
 
 
 }
 .menu_btn_education:hover {
-  background-color:navy;
+  background-color:MediumBlue;
 
 }
 .menu_btn_software {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
+  float: left;
 
 
 }
 .menu_btn_software:hover {
-  background-color:navy;
+  background-color:blue;
 
 }
 .menu_btn_hardware {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
+  float: left;
 
 
 }
 .menu_btn_hardware:hover {
-  background-color:navy;
+  background-color:Navy;
 
 }
 .menu_btn_key_attributes {
-  background-color:SteelBlue;
+  background-color:#0856A3;
   position: relative;
   font-size: 17px;
   color: white;
-  padding: 28px 33%;
+  padding: 15px 16.6666%;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
+  float: left;
 
 
 }
 .menu_btn_key_attributes:hover {
-  background-color:navy;
+  background-color:DodgerBlue;
 
 }
+
+
+
+
+
 
 
 #top_btn_actor {
