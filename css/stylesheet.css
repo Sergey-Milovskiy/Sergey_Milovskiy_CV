@@ -734,6 +734,14 @@ input[type=submit]:hover {
   border-radius: 0%;
 
 }
+.image_index_photo
+{
+    width: 300px;
+    display: block;
+
+  border-radius: 0%;
+
+}
 .image_index_empl
 {
     width: 6.5%;
@@ -788,8 +796,11 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
+
 }
-.menu_btn_index:hover {
+.menu_btn_index:hover{
   background-color:SteelBlue;
 
 }
@@ -805,11 +816,13 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
 
 
 }
 .menu_btn_employment:hover {
-  background-color:RoyalBlue;
+  background-color:Navy;
 
 }
 .menu_btn_education {
@@ -824,6 +837,8 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
 
 
 }
@@ -843,6 +858,8 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
 
 
 }
@@ -862,11 +879,13 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
 
 
 }
 .menu_btn_hardware:hover {
-  background-color:Navy;
+  background-color:RoyalBlue;
 
 }
 .menu_btn_key_attributes {
@@ -881,6 +900,8 @@ input[type=submit]:hover {
   border-radius: 4px;
   text-align: center;
   float: left;
+  text-decoration: none;
+  justify-content: flex-start;
 
 
 }
