@@ -706,7 +706,7 @@ input[type=submit]:hover {
     cursor: pointer;
     text-align: center;
     line-height: 75px;
-    padding: 15px;
+    padding: 0px;
     font-size: 17px;
   }
 
@@ -776,6 +776,114 @@ input[type=submit]:hover {
 
 
 
+.menu_btn_index {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_index:hover {
+  background-color:navy;
+
+}
+.menu_btn_employment {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_employment:hover {
+  background-color:navy;
+
+}
+.menu_btn_education {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_education:hover {
+  background-color:navy;
+
+}
+.menu_btn_software {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_software:hover {
+  background-color:navy;
+
+}
+.menu_btn_hardware {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_hardware:hover {
+  background-color:navy;
+
+}
+.menu_btn_key_attributes {
+  background-color:SteelBlue;
+  position: relative;
+  font-size: 17px;
+  color: white;
+  padding: 28px 33%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+
+
+}
+.menu_btn_key_attributes:hover {
+  background-color:navy;
+
+}
 
 
 #top_btn_actor {
