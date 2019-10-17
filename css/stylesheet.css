@@ -2,9 +2,9 @@
   .wrapper_header {
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: 220px 1fr 200px;
     grid-template-rows: repeat(auto-fill, 1fr);
-    grid-template-areas: "a b c d e";
+    grid-template-areas: "a b c";
     background-color: #6670ff;
     color: rgb(255, 255, 255);
 }
@@ -23,9 +23,8 @@
   grid-row-start: 1;
   grid-row-end: 2;
   border: 1px solid #dfdfdf;
+  padding: 10px;
   padding-right: 0px;
-  padding-left: 10px;
-  padding-top: 10px;
 
 
 }
@@ -38,7 +37,7 @@
   border: 1px solid #dfdfdf;
   padding-left: 0px;
   padding-bottom: 50px;
-
+  min-width: max-content;
 }
 .header_extra_menu {
 
@@ -801,7 +800,7 @@ grid-row-end: 23;
     outline: none;
     cursor: pointer;
     text-align: center;
-    line-height: 75px;
+    /*line-height: 75px;*/
     padding: 0px;
     font-size: 17px;
     justify-content: center;;
