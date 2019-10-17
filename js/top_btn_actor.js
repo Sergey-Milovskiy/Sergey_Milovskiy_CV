@@ -1,11 +1,11 @@
+
+  var mybutton = document.getElementById("top_btn_actor");
 //http://web.simmons.edu/~grabiner/comm244/weeknine/including-javascript.html  
 //this page helped me
 
 
 
   //Get the button
-  var mybutton = document.getElementById("top_btn_actor");
-
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
   
