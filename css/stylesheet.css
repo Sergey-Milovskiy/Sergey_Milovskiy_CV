@@ -677,38 +677,7 @@ input[type=submit]:hover {
 
 }
 
-.flex_box {
-  background-color: #0856A3;
-  display: flex;
-  align-items: stretch;
 
-  /*
-    flex-wrap: nowrap;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 16.66666666666666666666666%;
-  16.4369%;
-  */
-}
-  .flex_box-container > nav {
-    background-color: #87CAE6;
-    color: white;
-
-    width: 16.666%;
-    margin: 0px;
-    float: left;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    line-height: 75px;
-    padding: 0px;
-    font-size: 17px;
-  }
 
 
 
@@ -783,129 +752,98 @@ input[type=submit]:hover {
 
 
 
-
-.menu_btn_index {
-  background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
+  /*
+    flex-wrap: nowrap;
   color: white;
-  padding: 15px 16.6666%;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.66666666666666666666666%;
+  16.4369%;
+  */
+
+  .nav-container {
+    background-color: #0856A3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* align-items: stretch; */
+    color: white;
+
+    width: 100%;
+    margin: 0px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 75px;
+    padding: 0px;
+    font-size: 17px;
+    justify-content: center;;
+
+  }
+  .menu_btn {
+    position: relative;
+    font-size: 17px;
+    color: white;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+  
+  }
+.index_menu {
+  background-color:#0856A3;
 
 }
-.menu_btn_index:hover{
+.index_menu:hover{
   background-color:SteelBlue;
 
 }
-.menu_btn_employment {
+.employment_menu {
   background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
-  color: white;
-  padding: 15px 16.6666%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
-
 
 }
-.menu_btn_employment:hover {
+.employment_menu:hover {
   background-color:Navy;
 
 }
-.menu_btn_education {
+.education_menu {
   background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
-  color: white;
-  padding: 15px 16.6666%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
-
 
 }
-.menu_btn_education:hover {
+.education_menu:hover {
   background-color:MediumBlue;
 
 }
-.menu_btn_software {
+.software_menu {
   background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
-  color: white;
-  padding: 15px 16.6666%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
-
 
 }
-.menu_btn_software:hover {
+.software_menu:hover {
   background-color:blue;
 
 }
-.menu_btn_hardware {
+
+.hardware_menu{
   background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
-  color: white;
-  padding: 15px 16.6666%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
 
 
 }
-.menu_btn_hardware:hover {
+.hardware_menu:hover {
   background-color:RoyalBlue;
 
 }
-.menu_btn_key_attributes {
+.key_attributes_menu {
   background-color:#0856A3;
-  position: relative;
-  font-size: 17px;
-  color: white;
-  padding: 15px 16.6666%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  text-align: center;
-  float: left;
-  text-decoration: none;
-  justify-content: flex-start;
-
-
 }
-.menu_btn_key_attributes:hover {
+.key_attributes_menu:hover {
   background-color:DodgerBlue;
 
 }
