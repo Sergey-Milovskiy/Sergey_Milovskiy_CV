@@ -216,6 +216,10 @@ input[type=submit]:hover {
      margin-left:15%;
      margin-bottom:5%;
    }
+   .text_bold{
+    font-weight:bold;
+
+   }
 
 
 
