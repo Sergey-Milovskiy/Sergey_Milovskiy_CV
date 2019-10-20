@@ -1000,8 +1000,8 @@ grid-row-end: 3;
 }
 .box_education_head {
   color: #fff;
-  border-radius: 5px;
   font-weight:bold;
+  padding-left:10px;
 }
 .box_photo_education{
   text-align:center;
@@ -1183,7 +1183,6 @@ grid-row-end: 3;
 .box_software{
   text-align:center;
   color: #fff;
-  border-radius: 5px;
   padding-left: 10px;
 }
 .text_software_1
