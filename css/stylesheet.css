@@ -132,35 +132,36 @@ input[type=submit]:hover {
     background-color: #8e95ff;
    /* color: white; */
   }
+  /*https://cssgradient.io/*/
   .content_index {
     padding: 16px;
-    background-image: url("../pic/blue.jpg");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
 
   .content_employment_history {
     padding: 16px;
-    background-image: url("../pic/employment.png");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
   .content_education {
     padding: 16px;
-    background-image: url("../pic/education.png");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
   .content_software {
     padding: 16px;
-    background-image: url("../pic/software.png");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
   .content_hardware {
     padding: 16px;
-    background-image: url("../pic/hardware.jpg");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
   .content_key_attributes {
     padding: 16px;
-    background-image: url("../pic/skills.jpg");
+    background: linear-gradient(90deg, rgba(9,9,121,0.989233193277311) 48%, rgba(102,112,255,1) 94%, rgba(0,212,255,1) 100%);
     color:white;
   }
   .content_footer {
