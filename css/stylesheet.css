@@ -1,4 +1,47 @@
+@media only screen and (max-width: 600px) {
+/* If the screen size is 600px or less, set the font-size of <div> to 30px  font-size: 80px;       background-color: lightblue;
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/* Extra small devices (phones, 600px and down) */
 
+
+
+
+/* If the screen size is 600px wide or less, hide the element */
+}
+@media only screen and (max-width: 681px) {
+ /*remove header text*/
+  .header_text{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+    /* If the screen size is 601px or more, set the font-size of <div> to 80px  font-size: 30px;*/
+/* Small devices (portrait tablets and large phones, 601px and up) */
+
+}
+@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+}
+@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+}
+@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+
+}
+@media only screen and (orientation: landscape) {
+/*CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation */
+
+
+}
   .wrapper_header {
     display: grid;
     grid-gap: 1px;
