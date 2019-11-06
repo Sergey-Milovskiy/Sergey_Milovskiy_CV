@@ -1,13 +1,99 @@
-@media only screen and (max-width: 600px) {
-/* If the screen size is 600px or less, set the font-size of <div> to 30px  font-size: 80px;       background-color: lightblue;
-https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-/* Extra small devices (phones, 600px and down) */
+/* HDTV                                           */
+/*                                      1920x1080 */
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+  
+  }
 
+/* Widescreen                                     */
+/*                                       1280x800 */
+@media screen and (min-width: 800px) and (max-width: 1280px) {
 
-
-
-/* If the screen size is 600px wide or less, hide the element */
 }
+
+/* Twitter Bootstrap                              */
+/*                                       980x     */
+@media screen and (min-width: 980px) {
+
+}
+
+/* Twitter Bootstrap                              */
+/*                                       x979     */
+@media screen and (max-width: 979px) {
+
+}
+ 
+/* iPad Landscape & Portrait                      */
+/*                                       1024x768 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+/* iPad Landscape                                 */
+/*                                       1024x768 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+/* iPad Portrait                                  */
+/*                                       768x1024 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+}
+
+/* Small Tablet Landscape/Portrait                */
+/*                                        800x600 */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+}
+
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+@media screen and (min-width: 320px) and (max-width:568px) {
+
+}
+
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+@media screen and (min-width: 320px) and (max-width:480px) {
+
+
+}
+
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+@media screen and (max-width:320px) {
+  [class*="content_"]{width: 320px;font-size: 16px;}
+  .text_header{font-size: 24px;padding:0px;margin:10px;}
+  [class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
+  .image_logo{width: 50px;}
+  img.image_logo { width: 100px; }  
+  img.image_index_photo { width: 150px; } 
+  img.image_actor_photo { width: 150px; } 
+  img.image_index_edu{width:75px;}
+  img.image_index_empl{width:75px;}
+  img.image_hardware{width:300px;}
+  [class*="menu_"]{width:53.33px;font-size: 11px;padding:4px;    border-radius: 0px;}
+  [class*="title_"]{font-size:28px;}
+  .btn_employment_1{width:100px;}
+  .actor_resume_btn_index{width:50px;font-size: 14px;}
+  .fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+@media screen and (min-width:240px) and (max-width:320px) {
+
+}
+
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+@media screen and (max-width:240px) {
+
+}
+
 @media only screen and (max-width: 681px) {
  /*remove header text*/
   .header_text{
@@ -16,32 +102,8 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
 }
 
-@media only screen and (min-width: 601px) {
-    /* If the screen size is 601px or more, set the font-size of <div> to 80px  font-size: 30px;*/
-/* Small devices (portrait tablets and large phones, 601px and up) */
-
-}
-@media only screen and (min-width: 768px) {
-/* Medium devices (landscape tablets, 768px and up) */
 
 
-}
-@media only screen and (min-width: 992px) {
-/* Large devices (laptops/desktops, 992px and up) */
-
-
-}
-@media only screen and (min-width: 1200px) {
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-
-
-}
-@media only screen and (orientation: landscape) {
-/*CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation */
-
-
-}
   .wrapper_header {
     display: grid;
     grid-gap: 1px;
@@ -65,7 +127,6 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding: 10px;
   padding-right: 0px;
 
 
@@ -76,8 +137,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding-left: 0px;
-  padding-bottom: 50px;
+  padding-left: 15px;
   min-width: max-content;
 }
 .header_extra_menu {
@@ -86,7 +146,6 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding-bottom: 50px;
 
 }
   .header_contact {
@@ -270,7 +329,9 @@ input[type=submit]:hover {
     font-weight:bold;
 
    }
-
+   .title_actor .title_contact{
+    font-weight:bold;
+   }
 
 
 
@@ -1479,9 +1540,7 @@ grid-row-end: 3;
 
 
 .icon-bar {
-    position: absolute;
-    top: 25px;
-     right: 25px;
+  position: relative;
   width: 90px;
   background-color: rgb(191, 192, 255);
 }
