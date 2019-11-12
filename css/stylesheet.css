@@ -1,191 +1,31 @@
-/* HDTV                                           */
-/*                                      1920x1080 */
-@media screen and (min-width: 1080px) and (max-width: 1920px) {
-  
-  }
-
-/* Widescreen                                     */
-/*                                       1280x800 */
-@media screen and (min-width: 800px) and (max-width: 1280px) {
-
+ .mobile_animation {
+  display: block;
+  overflow: hidden;
+  background-color: #6670ff;
+  position: relative;
 }
 
-/* Twitter Bootstrap                              */
-/*                                       980x     */
-@media screen and (min-width: 980px) {
-
+.mobile_animation #myLinks {
+  display: none;
 }
 
-/* Twitter Bootstrap                              */
-/*                                       x979     */
-@media screen and (max-width: 979px) {
-
-}
- 
-/* iPad Landscape & Portrait                      */
-/*                                       1024x768 */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
+.mobile_animation a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-/* iPad Landscape                                 */
-/*                                       1024x768 */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
-
+.mobile_animation a.icon {
+  background: rgb(191, 192, 255);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-/* iPad Portrait                                  */
-/*                                       768x1024 */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
-  [class*="content_"]{width: 768px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 768px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 175px; }  
-  img.image_index_photo { width: 175px; } 
-  img.image_actor_photo { width: 175px; } 
-  img.image_index_edu{width:100px;}
-  img.image_index_empl{width:100px;}
-  img.image_hardware{width:600px;}
-  [class*="menu_"]{width:128px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
 
-}
-
-/* Small Tablet Landscape/Portrait                */
-/*                                        800x600 */
-@media screen and (min-width: 600px) and (max-width: 800px) {
-
-}
-
-/* iPhone5/Android landscape (& narrow browser)   */
-/*                                        568x320 */
-@media screen and (min-width: 320px) and (max-width:568px) {
-  [class*="content_"]{width: 568px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 568px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 125px; }  
-  img.image_index_photo { width: 150px; } 
-  img.image_actor_photo { width: 150px; } 
-  img.image_index_edu{width:75px;}
-  img.image_index_empl{width:75px;}
-  img.image_hardware{width:550px;}
-  [class*="menu_"]{width:94.66px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
-
-}
-
-/* iPhone4/Android landscape (& narrow browser)   */
-/*                                        480x320 */
-@media screen and (min-width: 320px) and (max-width:480px) {
-  [class*="content_"]{width: 480px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 480px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 125px; }  
-  img.image_index_photo { width: 150px; } 
-  img.image_actor_photo { width: 150px; } 
-  img.image_index_edu{width:75px;}
-  img.image_index_empl{width:75px;}
-  img.image_hardware{width:460px;}
-  [class*="menu_"]{width:80px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
-
-
-}
-
-/* iPhone4/Android portrait               320x480 */
-/* iPhone5 portrait                       320x568 */
-@media screen and (max-width:320px) {
-  [class*="content_"]{width: 320px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 100px; }  
-  img.image_index_photo { width: 125px; } 
-  img.image_actor_photo { width: 125px; } 
-  img.image_index_edu{width:75px;}
-  img.image_index_empl{width:75px;}
-  img.image_hardware{width:300px;}
-  [class*="menu_"]{width:53.33px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
-
-}
-
-/* Smaller devices                                */
-/* Android Landscape                      320x240 */
-@media screen and (min-width:240px) and (max-width:320px) {
-  [class*="content_"]{width: 320px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 100px; }  
-  img.image_index_photo { width: 125px; } 
-  img.image_actor_photo { width: 125px; } 
-  img.image_index_edu{width:75px;}
-  img.image_index_empl{width:75px;}
-  img.image_hardware{width:300px;}
-  [class*="menu_"]{width:53.33px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
-
-}
-
-/* Smaller devices                                */
-/* Android Portrait                       240x320 */
-@media screen and (max-width:240px) {
-  [class*="content_"]{width: 240px;font-size: 16px;}
-  .text_header{font-size: 24px;padding:0px;margin:10px;}
-  [class*=".wrapper_"] {width: 240px; font-size: 11px;  padding: 0px;  }
-  .image_logo{width: 50px;}
-  img.image_logo { width: 100px; }  
-  img.image_index_photo { width: 100px; } 
-  img.image_actor_photo { width: 100px; } 
-  img.image_index_edu{width:75px;}
-  img.image_index_empl{width:75px;}
-  img.image_hardware{width:220px;}
-  [class*="menu_"]{width:40px;font-size: 11px;padding:4px;    border-radius: 0px;}
-  [class*="title_"]{font-size:28px;}
-  .btn_employment_1{width:100px;}
-  .actor_resume_btn_index{width:50px;font-size: 14px;}
-  .fa{font-size:24px; }
-.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
-.box_header{padding:0px;}
-
-}
-
-@media only screen and (max-width: 681px) {
- /*remove header text*/
-  .header_text{
-    display: none;
-  }
-
-}
 
 
 
@@ -1807,3 +1647,195 @@ grid-row-end: 3;
   .actor_resume_btn_index:hover {
     background-color:RoyalBlue;
   }
+
+
+  /* HDTV                                           */
+/*                                      1920x1080 */
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+  
+}
+
+/* Widescreen                                     */
+/*                                       1280x800 */
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+
+}
+
+/* Twitter Bootstrap                              */
+/*                                       980x     */
+@media screen and (min-width: 980px) {
+
+}
+
+/* Twitter Bootstrap                              */
+/*                                       x979     */
+@media screen and (max-width: 979px) {
+
+}
+
+/* iPad Landscape & Portrait                      */
+/*                                       1024x768 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+/* iPad Landscape                                 */
+/*                                       1024x768 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+/* iPad Portrait                                  */
+/*                                       768x1024 */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+[class*="content_"]{width: 768px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 768px; font-size: 11px;  padding: 0px;  }
+img.image_logo { width: 175px; }  
+img.image_index_photo { width: 175px; } 
+img.image_actor_photo { width: 175px; } 
+img.image_index_edu{width:100px;}
+img.image_index_empl{width:100px;}
+img.image_hardware{width:600px;}
+[class*="menu_"]{width:128px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+/* Small Tablet Landscape/Portrait                */
+/*                                        800x600 */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+}
+
+/* iPhone5/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+@media screen and (min-width: 320px) and (max-width:568px) {
+[class*="content_"]{width: 568px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 568px; font-size: 11px;  padding: 0px;  }
+img.image_index_photo { width: 150px; } 
+img.image_actor_photo { width: 150px; } 
+img.image_index_edu{width:75px;}
+img.image_index_empl{width:75px;}
+img.image_hardware{width:550px;}
+[class*="menu_"]{width:94.66px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+@media screen and (min-width: 320px) and (max-width:480px) {
+[class*="content_"]{width: 480px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 480px; font-size: 11px;  padding: 0px;  }
+img.image_index_photo { width: 150px; } 
+img.image_actor_photo { width: 150px; } 
+img.image_index_edu{width:75px;}
+img.image_index_empl{width:75px;}
+img.image_hardware{width:460px;}
+[class*="menu_"]{width:80px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+
+}
+
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+@media screen and (max-width:320px) {
+[class*="content_"]{width: 320px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
+img.image_index_photo { width: 125px; } 
+img.image_actor_photo { width: 125px; } 
+img.image_index_edu{width:75px;}
+img.image_index_empl{width:75px;}
+img.image_hardware{width:300px;}
+[class*="menu_"]{width:53.33px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+@media screen and (min-width:240px) and (max-width:320px) {
+[class*="content_"]{width: 320px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
+img.image_index_photo { width: 125px; } 
+img.image_actor_photo { width: 125px; } 
+img.image_index_edu{width:75px;}
+img.image_index_empl{width:75px;}
+img.image_hardware{width:300px;}
+[class*="menu_"]{width:53.33px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+@media screen and (max-width:240px) {
+[class*="content_"]{width: 240px;font-size: 16px;}
+.text_header{font-size: 24px;padding:0px;margin:10px;}
+[class*=".wrapper_"] {width: 240px; font-size: 11px;  padding: 0px;  }
+img.image_index_photo { width: 100px; } 
+img.image_actor_photo { width: 100px; } 
+img.image_index_edu{width:75px;}
+img.image_index_empl{width:75px;}
+img.image_hardware{width:220px;}
+[class*="menu_"]{width:40px;font-size: 11px;padding:4px;    border-radius: 0px;}
+[class*="title_"]{font-size:28px;}
+.btn_employment_1{width:100px;}
+.actor_resume_btn_index{width:50px;font-size: 14px;}
+.fa{font-size:24px; }
+.icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
+.box_header{padding:0px;}
+
+}
+
+@media only screen and (max-width: 681px) {
+/*remove header text*/
+.header_text{
+  display: none;
+}
+}
+@media only screen and (max-width: 635px) {
+
+ [class*="menu_"]{display: none;}
+ [class="wrapper_header"]{display: none;}
+ [class="header_actor"]{display: none;}
+ [class="header_contact"]{display: none;}
+
+ img.image_logo { width: 75px; }  
+
+}
+@media only screen and (min-width: 636px) {
+  [class="mobile_animation"]{display:none;}
+   
+}
