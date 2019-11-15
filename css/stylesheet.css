@@ -3,6 +3,7 @@
   overflow: hidden;
   background-color: #6670ff;
   position: relative;
+  padding:3px;
 }
 
 .mobile_animation #myLinks {
@@ -11,7 +12,7 @@
 
 .mobile_animation a {
   color: white;
-  padding: 7px 16px;
+  padding: 3px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -101,9 +102,70 @@
   top: 100px;
   text-align: center;
 }
+.footer_header {
+  background-color: #6670ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 50%;
 
+}
+.footer_bottom{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-areas: "a b c";
+    background-color: #6670ff;
+    color: rgb(255, 255, 255);
 
+}
+.footer_text {
 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-width: max-content;
+  font-size:11px !important;
+}
+
+.footer_icons_menu {
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.icons_menu {
+  position: relative;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+.fa{
+  padding:5px;
+  width: 30px;
+
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
 
 .body_contact {
   margin:0;
@@ -1616,28 +1678,14 @@ grid-row-end: 3;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    opacity: 0.5;
   }
   #top_btn_actor:hover {
     background-color:navy;
+    opacity: 1;
+
   }
-  #top_btn_index {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 99;
-    font-size: 28px;
-    border: none;
-    outline: none;
-    background-color:Blue;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  #top_btn_index:hover {
-    background-color:navy;
-  }
+
 
 
   .actor_resume_btn_index {
@@ -1705,6 +1753,8 @@ grid-row-end: 3;
 [class*="content_"]{width: 768px;font-size: 16px;}
 .text_header{font-size: 24px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 768px; font-size: 11px;  padding: 0px;  }
+.footer_bottom{width:768px;}
+
 img.image_logo { width: 175px; }  
 img.image_index_photo { width: 175px; } 
 img.image_actor_photo { width: 175px; } 
@@ -1733,6 +1783,7 @@ img.image_hardware{width:600px;}
 [class*="content_"]{width: 568px;font-size: 16px;}
 .text_header{font-size: 24px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 568px; font-size: 11px;  padding: 0px;  }
+.footer_bottom{width:568px;}
 img.image_index_photo { width: 150px; } 
 img.image_actor_photo { width: 150px; } 
 img.image_index_edu{width:75px;}
@@ -1753,6 +1804,8 @@ img.image_hardware{width:550px;}
 [class*="content_"]{width: 480px;font-size: 16px;}
 .text_header{font-size: 24px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 480px; font-size: 11px;  padding: 0px;  }
+.footer_bottom{width:480px;}
+
 img.image_index_photo { width: 150px; } 
 img.image_actor_photo { width: 150px; } 
 img.image_index_edu{width:75px;}
@@ -1764,16 +1817,29 @@ img.image_hardware{width:460px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
+.top_btn_actor{font-size:12px;    opacity: 0.25;}
 
 
 }
+/*----------- iPhone 6+, 7+ and 8+ ----------- */
+@media screen and (min-width: 414px) and (max-width:736px) {
+  [class*="content_"]{width: 414px;font-size: 16px;}
+  [class*=".wrapper_"] {width: 414px; font-size: 12px;  padding: 0px;  }
+  .footer_bottom{width:414px;}
+
+  [class*="box_actor_"]{padding:8px;}
+  .top_btn_actor{font-size:12px;}
+}
+
 /*Galaxy phones */
 
 @media screen and (max-width:360px) {
   [class*="content_"]{width: 360px;font-size: 16px;}
-  [class*=".wrapper_"] {width: 3360px; font-size: 12px;  padding: 0px;  }
-  [class*="box_actor_"]{padding:3px;}
+  [class*=".wrapper_"] {width: 360px; font-size: 12px;  padding: 0px;  }
+  .footer_bottom{width:360px;}
 
+  [class*="box_actor_"]{padding:3px;}
+  .top_btn_actor{font-size:12px;}
 }
 /* iPhone4/Android portrait               320x480 */
 /* iPhone5 portrait                       320x568 */
@@ -1781,6 +1847,8 @@ img.image_hardware{width:460px;}
 [class*="content_"]{width: 320px;font-size: 16px;}
 .text_header{font-size: 24px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
+.footer_bottom{width:320px;}
+
 img.image_index_photo { width: 125px; } 
 img.image_actor_photo { width: 125px; } 
 img.image_index_edu{width:75px;}
@@ -1792,6 +1860,7 @@ img.image_hardware{width:300px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
+[class*="box_actor_"]{padding:0;}
 
 }
 
@@ -1801,6 +1870,8 @@ img.image_hardware{width:300px;}
 [class*="content_"]{width: 320px;font-size: 16px;}
 .text_header{font-size: 24px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 320px; font-size: 11px;  padding: 0px;  }
+.footer_bottom{width:320px;}
+
 img.image_index_photo { width: 125px; } 
 img.image_actor_photo { width: 125px; } 
 img.image_index_edu{width:75px;}
@@ -1812,6 +1883,7 @@ img.image_hardware{width:300px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
+[class*="box_actor_"]{padding:0;}
 
 }
 
@@ -1819,10 +1891,12 @@ img.image_hardware{width:300px;}
 /* Android Portrait                       240x320 */
 @media screen and (max-width:240px) {
 [class*="content_"]{width: 240px;font-size: 16px;}
-.text_header{font-size: 24px;padding:0px;margin:10px;}
+.text_header{font-size: 12px;padding:0px;margin:10px;}
 [class*=".wrapper_"] {width: 240px; font-size: 11px;  padding: 0px;  }
-img.image_index_photo { width: 100px; } 
-img.image_actor_photo { width: 100px; } 
+.footer_bottom{width:240px;}
+
+img.image_index_photo { width: 90px; } 
+img.image_actor_photo { width: 90px; } 
 img.image_index_edu{width:75px;}
 img.image_index_empl{width:75px;}
 img.image_hardware{width:220px;}
@@ -1833,6 +1907,7 @@ img.image_hardware{width:220px;}
 .fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
+[class*="box_actor_"]{padding:0;font-size:8px;}
 
 }
 
