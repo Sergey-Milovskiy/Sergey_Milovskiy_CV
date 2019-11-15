@@ -143,7 +143,7 @@
   text-align: center;
   transition: all 0.3s ease;
   color: white;
-  font-size: 11px;
+  font-size: 17px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -151,7 +151,7 @@
 }
 .fa{
   padding:5px;
-  width: 30px;
+  width: 33px;
 
 }
 .fa-facebook {
@@ -1668,7 +1668,7 @@ grid-row-end: 3;
     display: none;
     position: fixed;
     bottom: 100px;
-    right: 50px;
+    right: 150px;
     z-index: 99;
     font-size: 28px;
     border: none;
@@ -1840,6 +1840,7 @@ img.image_hardware{width:460px;}
 
   [class*="box_actor_"]{padding:3px;}
   .top_btn_actor{font-size:12px;}
+  
 }
 /* iPhone4/Android portrait               320x480 */
 /* iPhone5 portrait                       320x568 */
