@@ -17,18 +17,6 @@
   font-size: 17px;
   display: block;
 }
-
-.mobile_animation a.icon_mail {
-  background: rgb(191, 192, 255);
-  display: block;
-  position: absolute;
-  text-align: center;
-  transition: all 0.3s ease;
-  color: white;
-  width:50px;
-  right: 0;
-  top: 0;
-}
 .mobile_animation a.icon {
   background: rgb(191, 192, 255);
   display: block;
@@ -40,6 +28,18 @@
   right: 0;
   top: 33px;
 }
+.mobile_animation a.icon_mail {
+  background: rgb(191, 192, 255);
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  width:50px;
+  right: 0;
+  top: 0;
+}
+
 
 
 
@@ -1667,7 +1667,7 @@ grid-row-end: 3;
 #top_btn_actor {
     display: none;
     position: fixed;
-    bottom: 50px;
+    bottom: 100px;
     right: 50px;
     z-index: 99;
     font-size: 28px;
