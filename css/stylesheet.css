@@ -143,15 +143,15 @@
   text-align: center;
   transition: all 0.3s ease;
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
-  margin: 1px 1px;
+  margin: 5px 2px;
 
 }
 .fa{
   padding:5px;
-  width: 33px;
+  width: 31px;
 
 }
 .fa-facebook {
@@ -1668,7 +1668,7 @@ grid-row-end: 3;
     display: none;
     position: fixed;
     bottom: 100px;
-    right: 150px;
+    right: 130px;
     z-index: 99;
     font-size: 28px;
     border: none;
@@ -1760,10 +1760,8 @@ img.image_index_photo { width: 175px; }
 img.image_actor_photo { width: 175px; } 
 img.image_index_edu{width:100px;}
 img.image_index_empl{width:100px;}
-img.image_hardware{width:600px;}
 [class*="menu_"]{width:128px;font-size: 11px;padding:4px;    border-radius: 0px;}
 [class*="title_"]{font-size:28px;}
-.btn_employment_1{width:100px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
 .fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
@@ -1820,6 +1818,28 @@ img.image_hardware{width:450px;}
 .top_btn_actor{font-size:12px;    opacity: 0.25;}
 
 
+}
+/*pixel phones */
+
+@media screen and (max-width:411px) {
+  [class*="content_"]{width: 411px;font-size: 16px;}
+  [class*=".wrapper_"] {width: 411px; font-size: 12px;  padding: 0px;  }
+  .footer_bottom{width:411px;}
+
+  [class*="box_actor_"]{padding:6px;}
+  .top_btn_actor{font-size:12px;}
+  img.image_hardware{width:381px;}
+
+}
+/*----------- iPhone 6, 7 and 8 ----------- */
+@media screen and (min-width: 375px) and (max-width:667px) {
+  [class*="content_"]{width: 375px;font-size: 16px;}
+  [class*=".wrapper_"] {width: 375px; font-size: 12px;  padding: 0px;  }
+  .footer_bottom{width:375px;}
+
+  [class*="box_actor_"]{padding:4px;}
+  .top_btn_actor{font-size:12px;}
+  img.image_hardware{width:345px;}
 }
 /*----------- iPhone 6+, 7+ and 8+ ----------- */
 @media screen and (min-width: 414px) and (max-width:736px) {
