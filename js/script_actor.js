@@ -23,11 +23,3 @@
     document.documentElement.scrollTop = 0;
   }
 // <a href="#">top</a> // doesn't work in this situation, that is why it is present here  
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}

@@ -11,20 +11,34 @@
 
 .mobile_animation a {
   color: white;
-  padding: 14px 16px;
+  padding: 7px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
 
+.mobile_animation a.icon_mail {
+  background: rgb(191, 192, 255);
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  width:50px;
+  right: 0;
+  top: 0;
+}
 .mobile_animation a.icon {
   background: rgb(191, 192, 255);
   display: block;
   position: absolute;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  width:50px;
   right: 0;
-  top: 0;
+  top: 33px;
 }
-
 
 
 
@@ -1728,7 +1742,6 @@ img.image_hardware{width:550px;}
 [class*="title_"]{font-size:28px;}
 .btn_employment_1{width:100px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
-.fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
 
@@ -1749,13 +1762,19 @@ img.image_hardware{width:460px;}
 [class*="title_"]{font-size:28px;}
 .btn_employment_1{width:100px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
-.fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
 
 
 }
+/*Galaxy phones */
 
+@media screen and (max-width:360px) {
+  [class*="content_"]{width: 360px;font-size: 16px;}
+  [class*=".wrapper_"] {width: 3360px; font-size: 12px;  padding: 0px;  }
+  [class*="box_actor_"]{padding:3px;}
+
+}
 /* iPhone4/Android portrait               320x480 */
 /* iPhone5 portrait                       320x568 */
 @media screen and (max-width:320px) {
@@ -1771,7 +1790,6 @@ img.image_hardware{width:300px;}
 [class*="title_"]{font-size:28px;}
 .btn_employment_1{width:100px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
-.fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
 
@@ -1792,7 +1810,6 @@ img.image_hardware{width:300px;}
 [class*="title_"]{font-size:28px;}
 .btn_employment_1{width:100px;}
 .actor_resume_btn_index{width:50px;font-size: 14px;}
-.fa{font-size:24px; }
 .icon-bar{  padding: 0px;  font-size: 14px;width:30px;}
 .box_header{padding:0px;}
 
